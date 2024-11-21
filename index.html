@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZYAD Tik - تحميل الفيديوهات والصور</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="background-slideshow">
+        <div class="background" id="bg1"></div>
+        <div class="background" id="bg2"></div>
+        <div class="background" id="bg3"></div>
+    </div>
+
+    <header>
+        <h1>ZYAD Tik</h1>
+        <p>أفضل موقع لتحميل الفيديوهات والصور بجودة عالية وبدون علامات مائية</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2><i class="fas fa-video"></i> تحميل الفيديو</h2>
+            <form id="download-form">
+                <input type="url" placeholder="أدخل رابط الفيديو" id="video-link" required>
+                <select id="platform" required>
+                    <option value="" disabled selected>اختر المنصة</option>
+                    <option value="tiktok">TikTok</option>
+                    <option value="youtube">YouTube</option>
+                    <option value="instagram">Instagram</option>
+                </select>
+                <button type="submit">تحميل الآن</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2><i class="fas fa-image"></i> تحسين جودة الصور</h2>
+            <form id="enhance-form" enctype="multipart/form-data">
+                <input type="file" accept="image/*" id="image-upload" required>
+                <button type="submit">تحسين الصورة</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 ZYAD Tik. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
